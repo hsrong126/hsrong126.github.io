@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人經歷網站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#experience">經歷</a></li>
+            <li><a href="#contact">聯繫</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首頁 -->
+    <section id="home">
+        <div class="hero">
+            <h1>歡迎來到我的個人網站</h1>
+            <p>我是[你的名字]，一位[你的職業/角色]，熱衷於[你的興趣或專業領域]。</p>
+            <a href="#contact" class="btn">聯繫我</a>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about">
+        <h2>關於我</h2>
+        <p>我是[你的名字]，擁有[X年]的[領域/行業]經驗。我專注於[你的專長]，並致力於[你的目標或理念]。</p>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills">
+        <h2>技能</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar"><div class="progress" data-percent="90"></div></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="progress" data-percent="80"></div></div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar"><div class="progress" data-percent="70"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 經歷 -->
+    <section id="experience">
+        <h2>經歷</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>前端開發者 - [公司名稱]</h3>
+                <p>2022 - 至今</p>
+                <p>負責開發響應式網頁應用，提升用戶體驗，優化前端性能。</p>
+            </div>
+            <div class="timeline-item">
+                <h3>實習生 - [公司名稱]</h3>
+                <p>2020 - 2022</p>
+                <p>協助團隊完成網站設計與維護，學習現代前端框架。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫 -->
+    <section id="contact">
+        <h2>聯繫我</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="姓名" required>
+            <input type="email" id="email" placeholder="電子郵件" required>
+            <textarea id="message" placeholder="訊息" required></textarea>
+            <button type="submit" class="btn">發送</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
