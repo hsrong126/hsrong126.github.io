@@ -8,15 +8,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// 技能進度條動畫
-document.addEventListener('DOMContentLoaded', () => {
-    const progressBars = document.querySelectorAll('.progress');
-    progressBars.forEach(bar => {
-        const percent = bar.getAttribute('data-percent');
-        setTimeout(() => {
-            bar.style.width = percent + '%';
-        }, 500);
-    });
+// 影片交互：點擊影片外框可切換播放/暫停
+document.getElementById('project-video').addEventListener('click', function () {
+    if (this.paused) {
+        this.play();
+    } else {
+        this.pause();
+    }
 });
 
 // 聯繫表單驗證

@@ -12,8 +12,8 @@
         <ul>
             <li><a href="#home">首頁</a></li>
             <li><a href="#about">關於我</a></li>
-            <li><a href="#skills">技能</a></li>
             <li><a href="#experience">經歷</a></li>
+            <li><a href="#portfolio">專案展示</a></li>
             <li><a href="#contact">聯繫</a></li>
         </ul>
     </nav>
@@ -33,25 +33,6 @@
         <p>我是[你的名字]，擁有[X年]的[領域/行業]經驗。我專注於[你的專長]，並致力於[你的目標或理念]。</p>
     </section>
 
-    <!-- 技能 -->
-    <section id="skills">
-        <h2>技能</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <span>HTML & CSS</span>
-                <div class="progress-bar"><div class="progress" data-percent="90"></div></div>
-            </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" data-percent="80"></div></div>
-            </div>
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress-bar"><div class="progress" data-percent="70"></div></div>
-            </div>
-        </div>
-    </section>
-
     <!-- 經歷 -->
     <section id="experience">
         <h2>經歷</h2>
@@ -65,6 +46,26 @@
                 <h3>實習生 - [公司名稱]</h3>
                 <p>2020 - 2022</p>
                 <p>協助團隊完成網站設計與維護，學習現代前端框架。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專案展示 -->
+    <section id="portfolio">
+        <h2>專案展示</h2>
+        <div class="portfolio-grid">
+            <div class="video-container">
+                <video id="project-video" controls>
+                    <source src="./video.mp4" type="video/mp4">
+                    您的瀏覽器不支援影片播放。
+                </video>
+                <p>專案簡介：這是[專案名稱]的展示影片，展示了[簡單描述專案內容，例如“一個響應式網頁應用”]。</p>
+                <p>檔案放置於本地端。</p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/PrGYS2ZgME8" frameborder="0" allowfullscreen></iframe>
+                <p>專案簡介：這是[專案名稱2]的展示影片，展示了[簡單描述專案內容，例如“一個基於AI的應用程式”]。</p>
+                <p>檔案放置於 YouTube。</p>
             </div>
         </div>
     </section>

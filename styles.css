@@ -82,32 +82,34 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.skills-container {
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
     width: 100%;
-    max-width: 600px;
 }
 
-.skill {
-    margin-bottom: 1rem;
+.video-container {
+    width: 100%;
 }
 
-.skill span {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.progress-bar {
-    background: #ddd;
-    height: 20px;
+#project-video, .video-container iframe {
+    width: 100%;
+    height: 300px; /* 統一高度，確保邊框一致 */
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16 / 9; /* 保持標準寬高比 */
 }
 
-.progress {
-    background: #00aaff;
-    height: 100%;
-    width: 0;
-    transition: width 1s ease-in-out;
+.video-container p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #555;
 }
 
 .timeline {
@@ -158,5 +160,9 @@ h2 {
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    #project-video, .video-container iframe {
+        height: 200px; /* 手機上減小高度 */
     }
 }
